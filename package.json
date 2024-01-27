@@ -1,0 +1,38 @@
+{
+  "name": "eco-vuetify",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@mdi/font": "7.0.96",
+    "aos": "^2.3.4",
+    "core-js": "^3.29.0",
+    "particles": "^0.1.4",
+    "particles.vue3": "^2.12.0",
+    "pinia": "^2.0.0",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "roboto-fontface": "*",
+    "save": "^2.9.0",
+    "vee-validate": "^4.12.4",
+    "vue": "^3.2.0",
+    "vue-i18n": "^9.8.0",
+    "vue-particles": "^1.0.9",
+    "vue-router": "^4.0.0",
+    "vue-scrollto": "^2.20.0",
+    "vuetify": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "eslint": "^8.37.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "sass": "^1.60.0",
+    "unplugin-fonts": "^1.0.3",
+    "vite": "^4.2.0",
+    "vite-plugin-vuetify": "^1.0.0"
+  }
+}
