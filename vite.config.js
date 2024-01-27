@@ -10,7 +10,11 @@ import { fileURLToPath, URL } from 'node:url'
 // https://vitejs.dev/config/
 export default defineConfig({
 
+
   plugins: [
+    module.exports = {
+      publicpath: process.env.node_env === 'production' ? '/eco-vuetify/' : '/'
+    },
     vue({
       template: { transformAssetUrls }
     }),
@@ -20,14 +24,17 @@ export default defineConfig({
       styles: {
         configFile: 'src/styles/settings.scss',
       },
+
     }),
     ViteFonts({
       google: {
         families: [{
           name: 'Roboto',
           styles: 'wght@100;300;400;500;700;900',
+
         }],
       },
+
     }),
   ],
   define: { 'process.env': {} },
